@@ -3,15 +3,14 @@ public class Generator implements UsGenerator {
     UsCusip usCusip = new UsCusip();
 
     private String cusip;
-    private String usIsin1;
-
+    private String isin;
 
     @Override
     public String generate(String lastIsin) {
         String cusipFromIsin = usCusip.getCusipFromIsin(lastIsin);
         cusip = usCusip.generate(cusipFromIsin);
-        usIsin1 = usIsin.generate(cusip);
-        return usIsin1;
+        isin = usIsin.generate(cusip);
+        return isin;
     }
 
 }
