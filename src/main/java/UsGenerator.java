@@ -1,3 +1,3 @@
 public interface UsGenerator {
-    String generate(String lastIsin);
+    String generateIsin(String lastIsin);
 }

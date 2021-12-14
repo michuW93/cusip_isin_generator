@@ -131,14 +131,14 @@ class GeneratorTest {
 
     @Test
     void generatorTest0(){
-        String actual = generator.generate("US90284B9475");
+        String actual = generator.generateIsin("US90284B9475");
 
         Assertions.assertEquals("US90284B9541", actual);
     }
 
     @Test
     void generatorTest1(){
-        String actual = generator.generate("US90284B8972");
+        String actual = generator.generateIsin("US90284B8972");
 
         Assertions.assertEquals("US90284B9053", actual);
     }
